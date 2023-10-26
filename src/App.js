@@ -17,9 +17,9 @@ function App() {
                 <TabsComponent value={currentTab} tabs={tabs} />
                 <Routes>
                     {tabs.map((x) => (
-                        <Route path={`test-project/${x.id}`} element={<Tab path={x.path} setValue={setCurrentTab} value={x.order} />} />
+                        <Route path={`/${x.id}`} element={<Tab path={x.path} setValue={setCurrentTab} value={x.order} />} />
                     ))}
-                    <Route path="test-project/" element={<Tab path={tabs[0].path} setValue={setCurrentTab} value={0} />} />
+                    <Route path="/" element={<Tab path={tabs[0].path} setValue={setCurrentTab} value={0} />} />
                 </Routes>
             </HashRouter>}
         </>

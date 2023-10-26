@@ -7,7 +7,7 @@ const TabsComponent = ({ value, tabs }) => {
     return (
         <Tabs value={value} centered>
             {tabs.map((x) => (
-                <Link key={x.id} to={`test-project/${x.id}`}>
+                <Link key={x.id} to={x.id}>
                     <Tab label={x.title}/>
                 </Link>
             ))}
